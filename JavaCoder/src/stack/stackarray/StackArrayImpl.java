@@ -1,6 +1,6 @@
-package stacklinklist;
+package stack.stackarray;
 
-interface StackLinkListImpl {
+public interface StackArrayImpl {
     boolean isEmpty();
     void push(int data);
     void pop();

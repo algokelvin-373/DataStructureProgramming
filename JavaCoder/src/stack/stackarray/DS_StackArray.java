@@ -1,8 +1,8 @@
-package stack;
+package stack.stackarray;
 
 import java.util.Scanner;
 
-public class DS_Stack extends StackController {
+public class DS_StackArray extends StackController {
     private static int again = 1;
     private static Scanner input = new Scanner(System.in);
     private static int data;

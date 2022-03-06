@@ -1,4 +1,4 @@
-package stacklinklist;
+package stack.stacklinklist;
 
 public class StackLinkListCode implements StackLinkListImpl {
     private Item top;
