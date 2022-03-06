@@ -1,6 +1,6 @@
-package stack;
+package stack.stackarray;
 
-public class StackCode implements StackImpl {
+public class StackArrayCode implements StackArrayImpl {
     private static final int capacity = 10;
     int arr[] = new int[capacity];
     int top1 = -1;

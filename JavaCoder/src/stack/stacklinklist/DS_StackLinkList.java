@@ -1,4 +1,4 @@
-package stacklinklist;
+package stack.stacklinklist;
 
 import java.util.Scanner;
 

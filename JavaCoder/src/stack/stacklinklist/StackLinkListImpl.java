@@ -1,6 +1,6 @@
-package stack;
+package stack.stacklinklist;
 
-public interface StackImpl {
+interface StackLinkListImpl {
     boolean isEmpty();
     void push(int data);
     void pop();
