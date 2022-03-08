@@ -2,12 +2,13 @@ package stack.stackarray;
 
 import java.util.Scanner;
 
-public class DS_StackArray extends StackController {
-    private static int again = 1;
+public class DS_StackArray {
+    private static StackArrayCode stack = new StackArrayCode();
     private static Scanner input = new Scanner(System.in);
     private static int data;
 
     public static void main(String[] args) {
+        int again;
         do {
             System.out.println("What do you want to do?");
             System.out.println("1. Push data.");
@@ -17,19 +18,15 @@ public class DS_StackArray extends StackController {
             data = input.nextInt();
             switch (data) {
                 case 1: {
-                    System.out.print("Enter the data = ");
-                    data = input.nextInt();
-                    stack.push(data);
+                    push();
                     break;
                 }
                 case 2: {
-                    stack.pop();
-                    System.out.println("Data has been popped!");
+                    pop();
                     break;
                 }
                 case 3: {
-                    System.out.println("The data : ");
-                    stack.print();
+                    printData();
                     break;
                 }
             }
@@ -39,4 +36,22 @@ public class DS_StackArray extends StackController {
             again = inputAgain.nextInt();
         } while (again == 1);
     }
+
+    private static void push() {
+        System.out.print("Enter the data = ");
+        data = input.nextInt();
+        stack.push(data);
+        System.out.println("Data has been pushed");
+    }
+
+    private static void pop() {
+        stack.pop();
+        System.out.println("Data has been popped!");
+    }
+
+    private static void printData() {
+        System.out.println("The data : ");
+        stack.print();
+    }
+
 }
